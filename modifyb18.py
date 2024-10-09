@@ -9,7 +9,6 @@ def process_b18_with_trnbuild(b18_file):
     
     if not os.path.exists(trnbuild_exe):
         raise FileNotFoundError(f"TRNBuild executable not found at {trnbuild_exe}")
-    
     # Construire la commande
     command = [trnbuild_exe, b18_file,"/N", "/vfm"]
     
