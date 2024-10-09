@@ -2,7 +2,7 @@
 *  TRNBuild   3.0.302
 *********************************************************************************
 *   BUILDING DESCRIPTIONS FILE TRNSYS
-*   FOR BUILDING:   C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Modified-Simple-Step3_3.b18
+*   FOR BUILDING:   C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Simple-Step3.b18
 *   GET BY WORKING WITH TRNBuild 1.0 for Windows
 *********************************************************************************
 *
@@ -51,7 +51,7 @@ TYPES
 LAYER BuiltUpRoofing
  CONDUCTIVITY= 0.5832 : CAPACITY=   1.47 : DENSITY=   1121 : PERT=      0 : PENRT=      0
 LAYER EpsType1
- CONDUCTIVITY=    0.1 : CAPACITY=    1.5 : DENSITY=     15 : PERT=      0 : PENRT=      0
+ CONDUCTIVITY= 0.1 : CAPACITY=    1.5 : DENSITY=     15 : PERT=      0 : PENRT=      0
 LAYER EpsType2
  CONDUCTIVITY= 0.1285 : CAPACITY=    1.5 : DENSITY=     25 : PERT=      0 : PENRT=      0
 LAYER EpsType3
@@ -164,8 +164,8 @@ CONSTRUCTION ExtRoofHeavy
  HFRONT   = 11 : HBACK= 64
 CONSTRUCTION ExtWall
  LAYERS   = GypsumBoard SmallAirGap TimberWallInsulated OsbBoard WallAirSpace FiredClayBrick 
- THICKNESS= 0.1         0           0.08                0.04     0            0.19           
- ABS-FRONT= 0.4   : ABS-BACK= 0.5  
+ THICKNESS=    0.100    0.000    0.080    0.040    0.000    0.190
+ABS-FRONT= 0.4   : ABS-BACK= 0.5  
  EPS-FRONT= 0.9   : EPS-BACK= 0.9  
  HFRONT   = 11 : HBACK= 64
 CONSTRUCTION ExtWallHeavy
