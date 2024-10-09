@@ -11,11 +11,11 @@ def process_b18_with_trnbuild(b18_file):
         raise FileNotFoundError(f"TRNBuild executable not found at {trnbuild_exe}")
     
     # Construire la commande
-    command = [trnbuild_exe, b18_file,"/N"]
+    command = [trnbuild_exe, b18_file,"/N", "/vfm"]
     
     try:
         # # Exécuter TRNBuild
-        # process = subprocess.Popen(command)
+        process = subprocess.Popen(command)
         
         # # Attendre que TRNBuild s'ouvre
         # time.sleep(5)

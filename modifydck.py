@@ -48,4 +48,4 @@ modifications = {
     
 }
 
-modify_dck_file('Simple-Step3.dck', 'Modified-Simple-Step3_3.dck', modifications)
+modify_dck_file('./outputs/Simple-Step3.dck', './outputs/Modified-Simple-Step3_3.dck', modifications)

@@ -4,14 +4,14 @@ Pfad: C:\TRNSYS18\Building\trnvfm
 ************************************************************
 ** TRNVFM Version 1.39 
 ************************************************************
-** Reading b17 file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Modified-Simple-Step3_3.b18
+** Reading b17 file: C:\PI4_main\outputs\Modified-Simple-Step3_3.b18
 
 Reading zone: Basement
 
 Reading zone: West
 
 Reading zone: East
-** Closing b17 file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Modified-Simple-Step3_3.b18
+** Closing b17 file: C:\PI4_main\outputs\Modified-Simple-Step3_3.b18
 
 
 ** view factor calculation for zone Basement
@@ -26,14 +26,14 @@ Reading zone: East
 ** view factor calculation method surface to surface: closed form solution (P. Schröder and P. Hanrahan)
 ** view factor calculation method of gain/comfort positions: infinitesimal sphere
 
-** Reading ffr file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Basement.ffr
-** Reading ffr file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Basement.ffr...OK
+** Reading ffr file: C:\PI4_main\outputs\Basement.ffr
+** Reading ffr file: C:\PI4_main\outputs\Basement.ffr...OK
 
-** Reading ffr file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\West.ffr
-** Reading ffr file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\West.ffr...OK
+** Reading ffr file: C:\PI4_main\outputs\West.ffr
+** Reading ffr file: C:\PI4_main\outputs\West.ffr...OK
 
-** Reading ffr file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\East.ffr
-** Reading ffr file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\East.ffr...OK
+** Reading ffr file: C:\PI4_main\outputs\East.ffr
+** Reading ffr file: C:\PI4_main\outputs\East.ffr...OK
 
 0.000000000000 0.139255742706 0.139255742706 0.277255366584 0.083488890710 0.083488890710 0.277255366584 Sum=0.999999999999998
 0.348139356765 0.000000000000 0.123416567642 0.174069678382 0.090152359414 0.090152359414 0.174069678382 Sum=0.999999999999997
@@ -92,6 +92,6 @@ iteration #1 of 50
 ++++ Smoothing of area view factors in zones...OK
 
 
-++++ Writing VFM file: C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Modified-Simple-Step3_3.vfm
+++++ Writing VFM file: C:\PI4_main\outputs\Modified-Simple-Step3_3.vfm
 
 VFM file successfully created.
