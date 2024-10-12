@@ -2,7 +2,7 @@
 *  TRNBuild   3.0.302
 *********************************************************************************
 *   BUILDING DESCRIPTIONS FILE TRNSYS
-*   FOR BUILDING:   C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Modified-Simple-Step3_2.inf
+*   FOR BUILDING:   C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Code and database\PI4_main\outputs\Modified-Simple-Step3_2.inf
 *   GET BY WORKING WITH TRNBuild 1.0 for Windows
 *********************************************************************************
 *
@@ -135,7 +135,7 @@ CONSTRUCTION ExtRoofHeavy
  HFRONT   = 11 : HBACK= 64
 CONSTRUCTION ExtWall
  LAYERS   = GypsumBoard SmallAirGap TimberWallInsulated OsbBoard WallAirSpace FiredClayBrick 
- THICKNESS= 0.01        0           0.08                0.04     0            0.1            
+ THICKNESS= 0.1         0           0.08                0.04     0            0.19           
  ABS-FRONT= 0.4   : ABS-BACK= 0.5  
  EPS-FRONT= 0.9   : EPS-BACK= 0.9  
  HFRONT   = 11 : HBACK= 64
@@ -155,7 +155,7 @@ CONSTRUCTION GroundFloor
 *  W i n d o w s
 *--------------------------------------------------------------------------------
 WINDOW EXT_WINDOW1
- WINID=6502 : HINSIDE=11 : HOUTSIDE=64 : SLOPE=-999 : SPACID=4 : WWID=1.5 : WHEIG=1.5 : FFRAME=0.15 : UFRAME=18 : ABSFRAME=0.6 : RISHADE=0 : RESHADE=0 : REFLISHADE=0.5 : REFLOSHADE=0.5 : CCISHADE=0.5 : EPSFRAME=0.9 : EPSISHADE=0.9 : ITSHADECLOSE=INPUT 1*SHADE_CLOSE : ITSHADEOPEN=INPUT 1*SHADE_OPEN : FLOWTOAIRNODE=1 : PERT=0 : PENRT=0 : RADMATERIAL=undefined : RADMATERIAL_SHD1=undefined
+ WINID=6501 : HINSIDE=11 : HOUTSIDE=64 : SLOPE=-999 : SPACID=4 : WWID=1.5 : WHEIG=1.5 : FFRAME=0.15 : UFRAME=18 : ABSFRAME=0.6 : RISHADE=0 : RESHADE=0 : REFLISHADE=0.5 : REFLOSHADE=0.5 : CCISHADE=0.5 : EPSFRAME=0.9 : EPSISHADE=0.9 : ITSHADECLOSE=INPUT 1*SHADE_CLOSE : ITSHADEOPEN=INPUT 1*SHADE_OPEN : FLOWTOAIRNODE=1 : PERT=0 : PENRT=0 : RADMATERIAL=undefined : RADMATERIAL_SHD1=undefined
 *--------------------------------------------------------------------------------
 *  G a i n s / L o s s e s
 *--------------------------------------------------------------------------------
@@ -1006,21 +1006,25 @@ _EXTENSION_VAMPARAMS_END_
 
               ---------- WALL TYPE ExtWall                                                     ----------
 
-       THERMAL CONDUCTANCE, U=     1.62793 kJ/h m2K; U-Wert=     0.41992 W/m2K
+       THERMAL CONDUCTANCE, U=     1.26744 kJ/h m2K; U-Wert=     0.33218 W/m2K
               (incl. alpha_i=7.7 W/m^2 K and alpha_o=25 W/m^2 K)
 
                         TRANSFERFUNCTION COEFFICIENTS
    K            A              B              C              D
 
-   0       1.1455979E+02    3.2561761E-07    1.3740654E+01    1.0000000E+00
-   1      -2.7347986E+02    1.3098198E-03   -3.4522485E+01   -1.7522694E+00
-   2       2.2643121E+02    2.2377136E-02    3.1536379E+01    1.0147603E+00
-   3      -7.7946508E+01    4.4768380E-02   -1.2732676E+01   -2.2316107E-01
-   4       1.1083574E+01    1.7570037E-02    2.1887705E+00    1.4601290E-02
-   5      -5.6690126E-01    1.4483347E-03   -1.2457291E-01   -1.8443816E-04
-   6       6.2020597E-03    2.2273431E-05    1.4305084E-03    4.8477756E-07
-   7      -1.0827149E-05    5.1986522E-08   -3.6327479E-06
-  SUM      8.7496354E-02    8.7496357E-02    8.7496356E-02    5.3747116E-02
+   0       1.1495281E+02    7.5317530E-13    2.5209435E+01    1.0000000E+00
+   1      -4.4948626E+02    6.2028695E-10   -9.8571612E+01   -3.3242685E+00
+   2       7.1998137E+02    1.2934104E-06    1.5791192E+02    4.4138767E+00
+   3      -6.1103054E+02    6.2396933E-05   -1.3401008E+02   -3.0005021E+00
+   4       2.9757101E+02    4.6895089E-04    6.5232410E+01    1.1198445E+00
+   5      -8.4591602E+01    9.5286468E-04   -1.8535552E+01   -2.3133315E-01
+   6       1.3782372E+01    6.4965064E-04    3.0247038E+00    2.5559803E-02
+   7      -1.2316233E+00    1.6200795E-04   -2.7092827E-01   -1.3849491E-03
+   8       5.5905717E-02    1.5050273E-05    1.2262370E-02    3.2666052E-05
+   9      -1.1382834E-03    5.0787824E-07   -2.4696843E-04   -3.3112687E-07
+  10       9.9063900E-06    5.8824968E-09    2.1844748E-06
+  11      -3.3285960E-08    2.1582901E-11   -7.3880440E-09
+  SUM      2.3127292E-03    2.3127292E-03    2.3127292E-03    1.8247284E-03
 
 
               ---------- WALL TYPE ExtWallHeavy                                                ----------
@@ -1125,7 +1129,7 @@ _EXTENSION_VAMPARAMS_END_
    BndWall                                                      |         117.000 |           0.503 |           0.000 |           0.000
    ExtRoof                                                      |          45.000 |           0.244 |           0.000 |           0.000
    ExtRoofHeavy                                                 |          45.000 |           0.250 |           0.000 |           0.000
-   ExtWall                                                      |          52.500 |           0.420 |           0.000 |           0.000
+   ExtWall                                                      |          52.500 |           0.332 |           0.000 |           0.000
    ExtWallHeavy                                                 |          52.500 |           0.436 |           0.000 |           0.000
    GroundFloor                                                  |          90.000 |           2.180 |           0.000 |           0.000
 

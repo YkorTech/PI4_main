@@ -60,10 +60,9 @@ def batch_run_simulations(dck_files):
 # Exemple d'utilisation
 if __name__ == "__main__":
     dck_files = [
-        # "./outputs/Modified-Simple-Step3_1.dck",
-        # "./outputs/Modified-Simple-Step3_2.dck",
-        "C:\PI4_main\outputs\Modified-Simple-Step3_3.dck"
-    ]
+        "./outputs/Modified-Simple-Step3_1.dck",
+        "./outputs/Modified-Simple-Step3_2.dck"
+         ]
     
     results = batch_run_simulations(dck_files)
     

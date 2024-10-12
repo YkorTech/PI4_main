@@ -103,7 +103,7 @@ INPUTS 19
 *** INITIAL INPUT VALUES
 0 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 
 *** External files
-ASSIGN "Modified-Simple-Step3_2.b18" 31
+ASSIGN "./outputs/Modified-Simple-Step3_2.b18" 31
 *|? Building description file (*.b18, *.b17, *.bui) |1000
 *------------------------------------------------------------------------------
 

@@ -43,9 +43,9 @@ def modify_dck_file(input_file, output_file, modifications):
 # Exemple d'utilisation
 modifications = {
     'WEATHER_FILE': 'CAN-QC-McTavish-7024745-CWEC23',
-    'B18_FILE': 'Modified-Simple-Step3_3',
+    'B18_FILE': './outputs/Modified-Simple-Step3_2',
     'GAINS_FILE': 'CCHT-GainSchedule-15min',
     
 }
 
-modify_dck_file('./outputs/Simple-Step3.dck', './outputs/Modified-Simple-Step3_3.dck', modifications)
+modify_dck_file('./outputs/Simple-Step3.dck', './outputs/Modified-Simple-Step3_2.dck', modifications)

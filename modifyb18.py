@@ -2,49 +2,50 @@ import re
 import subprocess
 import os
 import time
-# import pyautogui
+import pyautogui
 
 def process_b18_with_trnbuild(b18_file):
     trnbuild_exe = r"C:\TRNSYS18\Building\TRNBuild.exe"
     
     if not os.path.exists(trnbuild_exe):
         raise FileNotFoundError(f"TRNBuild executable not found at {trnbuild_exe}")
+    
     # Construire la commande
-    command = [trnbuild_exe, b18_file,"/N", "/vfm"]
+    command = [trnbuild_exe, b18_file]
     
     try:
-        # # Exécuter TRNBuild
+        # Exécuter TRNBuild
         process = subprocess.Popen(command)
         
-        # # Attendre que TRNBuild s'ouvre
-        # time.sleep(5)
+        # Attendre que TRNBuild s'ouvre
+        time.sleep(5)
         
-        # # Fermer TRNBuild
-        # pyautogui.hotkey('alt', 'f4')
+        # Fermer TRNBuild
+        pyautogui.hotkey('alt', 'f4')
         
-        # # Attendre l'apparition de la boîte de dialogue de sauvegarde
-        # time.sleep(2)
+        # Attendre l'apparition de la boîte de dialogue de sauvegarde
+        time.sleep(2)
         
-        # # Appuyer sur 'Enter' pour confirmer la sauvegarde
-        # pyautogui.press('enter')
+        # Appuyer sur 'Enter' pour confirmer la sauvegarde
+        pyautogui.press('enter')
         
-        # # Attendre l'apparition de la fenêtre de génération des matrices
-        # time.sleep(2)
+        # Attendre l'apparition de la fenêtre de génération des matrices
+        time.sleep(2)
         
-        # # Cliquer sur le bouton "play" pour générer les matrices
-        # pyautogui.press('tab', presses=2)  # Ajustez le nombre de pressions selon le focus initial
-        # pyautogui.press('enter')
+        # Cliquer sur le bouton "play" pour générer les matrices
+        pyautogui.press('tab', presses=2)  # Ajustez le nombre de pressions selon le focus initial
+        pyautogui.press('enter')
         
-        # # Attendre que TRNBuild se ferme complètement
-        # process.wait()
+        # Attendre que TRNBuild se ferme complètement
+        process.wait()
         
         print(f"TRNBuild processing completed for {b18_file}")
         
-        # # Vérifier si les fichiers nécessaires ont été créés
-        # expected_files = [f"{os.path.splitext(b18_file)[0]}.{ext}" for ext in ['bld', 'inf', 'trn', 'vfm', 'ism', 'log']]
-        # for file in expected_files:
-        #     if not os.path.exists(file):
-        #         print(f"Warning: Expected file {file} was not created.")
+        # Vérifier si les fichiers nécessaires ont été créés
+        expected_files = [f"{os.path.splitext(b18_file)[0]}.{ext}" for ext in ['bld', 'inf', 'trn', 'vfm', 'ism', 'log']]
+        for file in expected_files:
+            if not os.path.exists(file):
+                print(f"Warning: Expected file {file} was not created.")
         
         return True
     except Exception as e:
@@ -107,20 +108,20 @@ def modify_b18_file(input_file, output_file, modifications):
 # Exemple d'utilisation
 modifications = {
     'LAYERS': {
-        'EpsType1': {'conductivity': 0.1, 'capacity': 1.5, 'density': 15},
+        'EpsType1': {'conductivity': 0.15, 'capacity': 2.5, 'density': 15},
     },
     'CONSTRUCTIONS': {
         'ExtWall': {'thickness': [0.1, 0, 0.08, 0.04, 0, 0.19]},
     },
     'WINDOWS': {
-        'EXT_WINDOW1': 6503,
-        'EXT_WINDOW2': 6503,
+        'EXT_WINDOW1': 6501,
+        'EXT_WINDOW2': 6502,
     },
 }
 
 # modify_b18_file('Simple-Step3.b18', 'Modified-Simple-Step3_1.b18', modifications)
 
 input_file = "./outputs/Simple-Step3.b18"
-output_file = "./outputs/Modified-Simple-Step3_3.b18"
+output_file = "./outputs/Modified-Simple-Step3_2.b18"
 
 modify_b18_file(input_file, output_file, modifications)

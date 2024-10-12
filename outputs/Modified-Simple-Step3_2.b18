@@ -2,7 +2,7 @@
 *  TRNBuild   3.0.302
 *********************************************************************************
 *   BUILDING DESCRIPTIONS FILE TRNSYS
-*   FOR BUILDING:   C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Demo\New folder\Code and database\Modified-Simple-Step3_2.b18
+*   FOR BUILDING:   C:\Users\YkorT\OneDrive\YKOR\Poly\Automne 2024\MEC8370 - AER8875 Projets intégrateurs IV\Code and database\PI4_main\outputs\Modified-Simple-Step3_2.b18
 *   GET BY WORKING WITH TRNBuild 1.0 for Windows
 *********************************************************************************
 *
@@ -51,7 +51,7 @@ TYPES
 LAYER BuiltUpRoofing
  CONDUCTIVITY= 0.5832 : CAPACITY=   1.47 : DENSITY=   1121 : PERT=      0 : PENRT=      0
 LAYER EpsType1
- CONDUCTIVITY=   0.14 : CAPACITY=    1.5 : DENSITY=     15 : PERT=      0 : PENRT=      0
+ CONDUCTIVITY=   0.15 : CAPACITY=    2.5 : DENSITY=     15 : PERT=      0 : PENRT=      0
 LAYER EpsType2
  CONDUCTIVITY= 0.1285 : CAPACITY=    1.5 : DENSITY=     25 : PERT=      0 : PENRT=      0
 LAYER EpsType3
@@ -164,7 +164,7 @@ CONSTRUCTION ExtRoofHeavy
  HFRONT   = 11 : HBACK= 64
 CONSTRUCTION ExtWall
  LAYERS   = GypsumBoard SmallAirGap TimberWallInsulated OsbBoard WallAirSpace FiredClayBrick 
- THICKNESS= 0.01        0           0.08                0.04     0            0.1            
+ THICKNESS= 0.1         0           0.08                0.04     0            0.19           
  ABS-FRONT= 0.4   : ABS-BACK= 0.5  
  EPS-FRONT= 0.9   : EPS-BACK= 0.9  
  HFRONT   = 11 : HBACK= 64
@@ -184,7 +184,7 @@ CONSTRUCTION GroundFloor
 *  W i n d o w s
 *--------------------------------------------------------------------------------
 WINDOW EXT_WINDOW1
- WINID=6502 : HINSIDE=11 : HOUTSIDE=64 : SLOPE=-999 : SPACID=4 : WWID=1.5 : WHEIG=1.5 : FFRAME=0.15 : UFRAME=18 : ABSFRAME=0.6 : RISHADE=0 : RESHADE=0 : REFLISHADE=0.5 : REFLOSHADE=0.5 : CCISHADE=0.5 : EPSFRAME=0.9 : EPSISHADE=0.9 : ITSHADECLOSE=INPUT 1*SHADE_CLOSE : ITSHADEOPEN=INPUT 1*SHADE_OPEN : FLOWTOAIRNODE=1 : PERT=0 : PENRT=0 : RADMATERIAL=undefined : RADMATERIAL_SHD1=undefined
+ WINID=6501 : HINSIDE=11 : HOUTSIDE=64 : SLOPE=-999 : SPACID=4 : WWID=1.5 : WHEIG=1.5 : FFRAME=0.15 : UFRAME=18 : ABSFRAME=0.6 : RISHADE=0 : RESHADE=0 : REFLISHADE=0.5 : REFLOSHADE=0.5 : CCISHADE=0.5 : EPSFRAME=0.9 : EPSISHADE=0.9 : ITSHADECLOSE=INPUT 1*SHADE_CLOSE : ITSHADEOPEN=INPUT 1*SHADE_OPEN : FLOWTOAIRNODE=1 : PERT=0 : PENRT=0 : RADMATERIAL=undefined : RADMATERIAL_SHD1=undefined
 WINDOW EXT_WINDOW2
  WINID=6502 : HINSIDE=11 : HOUTSIDE=64 : SLOPE=-999 : SPACID=4 : WWID=1.5 : WHEIG=1.5 : FFRAME=0.5 : UFRAME=7.2 : ABSFRAME=0.6 : RISHADE=0 : RESHADE=0 : REFLISHADE=0.5 : REFLOSHADE=0.5 : CCISHADE=0.5 : EPSFRAME=0.9 : EPSISHADE=0.9 : ITSHADECLOSE=INPUT 1*SHADE_CLOSE : ITSHADEOPEN=INPUT 1*SHADE_OPEN : FLOWTOAIRNODE=1 : PERT=0 : PENRT=0 : RADMATERIAL=undefined : RADMATERIAL_SHD1=undefined
 *--------------------------------------------------------------------------------
